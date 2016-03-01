@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         
         var sliderNumberValue = Int(sliderValue.value)
         
-        cell.textLabel?.text = String(sliderNumberValue * (indexPath.row + 1))
+        cell.textLabel?.text = "\(sliderNumberValue) x \(indexPath.row + 1) = " + String(sliderNumberValue * (indexPath.row + 1))
         
         return cell
         
