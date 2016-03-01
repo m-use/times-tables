@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var sliderValue: UISlider!
+    @IBAction func numberSlider(sender: AnyObject) {
+        
+        print(sliderValue)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
